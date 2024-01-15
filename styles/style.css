@@ -1,3 +1,202 @@
 * {
     font-family: Mulish;
+    margin: 0;
+}
+main{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+/*banner css start*/
+.banner {
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../styles/Images/banner.png);
+    text-align: center;
+    height: 500px;
+    border-radius: 8px;
+    background-position: center;
+}
+.banner-contain {
+    
+}
+.banner-titel {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 4rem;
+    font-weight: 800;
+    padding-top: 106px;
+}
+.primary-pera {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 16px;
+    line-height: 26px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 24px 0 48px 0;
+}
+.banner-input {
+    
+ padding: 16px;
+ background: rgba(255, 255, 255, 0.30);
+ width: 75%;
+ margin: 0 auto;
+ border-radius: 8px;
+}
+.banner-input input {
+    border: none;
+    outline: none;
+    padding: 16px 5px;
+    margin-right: 24px;
+    border-radius: 8px;
+    color: rgba(19, 19, 24, 0.50);
+}
+.banner-input button {
+    border: none;
+    outline: none;
+    padding: 16px 35px;
+    border-radius: 8px;
+    color: rgba(19, 19, 24, 0.50);
+    color: #FFF;
+    font-weight: 700;
+    background: #FF5400;
+}
+/*banner css end*/
+
+/*popular tour start*/
+.popular-tour {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    gap: 30px;
+}
+.tour-contain {
+    width: 50%;
+}
+.tour-titel {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.tour-pera {
+    color: rgba(19, 19, 24, 0.70);
+    line-height: 26px;
+    margin-bottom: 24px;
+}
+.tour-contain button {
+    border: 0;
+    outline: 0;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 14px 35px;
+    background-color: #FF5400;
+    border-radius: 8px;
+}
+/*popular tour end*/
+/*footer css start*/
+.footer-part {
+    padding: 110px 0;
+    background: rgba(19, 19, 24, 0.05);
+    text-align: center;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logo-text {
+    color: var(--Dark-01, #131318);
+    font-family: Mulish;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.logo-text span {
+    color: #FF5400;
+}
+.footer-pera {
+    color: #5A5A5D;
+    font-family: Mulish;
+    line-height: 26px;
+    width: 50%;
+    margin: 5px auto;
+}
+hr {
+    width: 60%;
+    margin: 0 auto;
+    color: #1313181A;
+}
+.social-icon {
+    height: 30px;
+    padding: 30px 0;
+}
+.social-icon a {
+    height: 24px;
+    width: 24px;
+    color: #131318;
+    text-decoration: none;
+    
+}
+.social-icon a i {
+    margin-right: 15px;
+}
+.copy-right {
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+/*footer css end*/
+@media screen and (max-width:600px) {
+    .banner-titel {
+        font-size: 22px;
+        padding-top: 32px;
+    }
+    .banner-input input {
+        margin-bottom: 24px;
+        display: block;
+        padding: 16px;
+        width: 90%;
+    }
+    .primary-pera {
+        font-size: 14px;
+        line-height: 21px;
+        width: 80%;
+        padding: 20px 0 20px 0;}
+    .banner-input button {
+            width: 90%;
+        }
+    .popular-tour {
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .tour-contain {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .tour-img {
+        margin: 0 auto;
+    }
+    .footer-part {
+        padding: 30px 0;
+    }
+    .footer-pera {
+        width: 70%;
+        font-size: 14px;
+    }
+    .social-icon {
+        padding: 10px 0;
+    }
+    hr {
+        width: 90%;
+    }
+    .copy-right {
+        font-size: 14px;
+        margin-top: 20px;
 }
