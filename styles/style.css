@@ -48,9 +48,6 @@ nav li a:hover {
     border-radius: 8px;
     background-position: center;
 }
-.banner-contain {
-    
-}
 .banner-titel {
     color: #FFF;
     font-size: 4rem;
@@ -292,8 +289,52 @@ nav li a:hover {
     line-height: 26px; 
 }
 /*choose us end*/
+/*perfect placr start*/
 
-/*blog end*/
+.perfect-place {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+.perfect-text {
+    width: 50%;
+}
+.perfect-titel  {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 60px;
+}
+.perfect-pera {
+    color: #5A5A5D;
+    line-height: 26px;
+    margin: 25px 0;
+}
+.perfect-place ul li{
+    color: #131318;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+.perfect-place button {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 10px 25px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+}
+.perfect-video {
+    width: 45%;
+}
+.perfect-video iframe{
+    border-radius: 16px;
+}
+
+/*perfect placr end*/
+/*blog start*/
 .blog {
     text-align: center;
 }
@@ -578,6 +619,18 @@ nav li a:hover {
     }
     .guarantee {
         width: 77%;
+    }
+    .perfect-place {
+        margin-bottom: 30px;
+        flex-direction: column;
+    }
+    .perfect-text {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .perfect-video {
+        width: 90%;
+        margin: 0 auto;
     }
     .card-container{
         width: 90%;
