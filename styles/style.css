@@ -2,10 +2,42 @@
     font-family: Mulish;
     margin: 0;
 }
-main{
+main, header{
     max-width: 1170px;
     margin: 0 auto;
 }
+/*heaser css start*/
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+.nav-bar {
+    display: flex;
+    width: 55%;
+}
+.manu-bar li {
+    list-style: none;
+    margin-left: 25px;
+}
+.nav-bar a {
+    text-decoration: none;
+    color: var(--Dark-02, #424247);
+    font-size: 18px;
+    transition: .5s;
+}
+.nav-bar a:hover {
+    color: #FF5400;
+    font-weight: 700;
+}
+/*header css end*/
 /*banner css start*/
 .banner {
     background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../styles/Images/banner.png);
@@ -71,6 +103,7 @@ main{
 }
 .tour-contain {
     width: 50%;
+    padding: 5px;
 }
 .tour-titel {
     color: #131318;
@@ -94,6 +127,140 @@ main{
     border-radius: 8px;
 }
 /*popular tour end*/
+/*choose us start*/
+.choose-us {
+    text-align: center;
+    margin-bottom: 70px;
+}
+.choose-titel {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+.choose-pera {
+    color: rgba(19, 19, 24, 0.70);
+    line-height: 26px;
+    width: 55%;
+    margin: 24px auto;
+}
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.hotels {
+    text-align: left;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 30px 55px 30px 30px;
+}
+.service {
+    text-align: left;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    padding: 30px 55px 30px 30px;
+}
+.guarantee {
+    margin: 15px auto;
+    width: 42%;
+    text-align: left;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 30px 55px 30px 30px;
+}
+.card-titel {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 25px;
+    margin-bottom: 16px;
+}
+.card-pera {
+    color: #5A5A5D;
+    line-height: 26px; 
+}
+/*choose us end*/
+
+/*news letter start*/
+.news-letter {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 80px;
+}
+.news-letter-text {
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    width: 35%;
+}
+.news-letter-titel {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+.news-letter-pera {
+    color: #5A5A5D;
+    line-height: 26px;
+    margin: 16px 0;
+}
+.news-letter-hr {
+    background-color: #1313181A;
+    height: 1px;
+    margin-bottom: 16px;
+    border: none;
+}
+.news-letter-text input {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    margin-bottom: 16px;
+    color: rgba(19, 19, 24, 0.30);
+}
+.news-letter-text button {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 12px;
+}
+.news-letter-img {
+    width: 65%;
+}
+.news-letter-img img{
+    width: 100%;
+}
+.discount {
+    background: #FF5400;
+    text-align: center;
+    padding: 5px;
+    border-radius: 8px;
+    position: relative;
+    top: -130px;
+    right: -325px;
+    width: 230px;
+    transform: rotate(-25deg);
+}
+.discount-titel {
+    color: #FFF;
+    font-size: 24px;
+}
+.discount-pera {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 700;
+}
+/*news letter end*/
 /*footer css start*/
 .footer-part {
     padding: 110px 0;
@@ -109,10 +276,9 @@ main{
 .logo-text {
     color: var(--Dark-01, #131318);
     font-family: Mulish;
-    font-size: 32px;
-    font-style: normal;
+    font-size: 30px;
     font-weight: 800;
-    line-height: normal;
+    margin-left: 10px;
 }
 .logo-text span {
     color: #FF5400;
@@ -124,10 +290,12 @@ main{
     width: 50%;
     margin: 5px auto;
 }
-hr {
+.footer-hr {
     width: 60%;
     margin: 0 auto;
-    color: #1313181A;
+    background-color: #1313181A;
+    height: 1px;
+    border: none;
 }
 .social-icon {
     height: 30px;
@@ -152,7 +320,19 @@ hr {
 }
 
 /*footer css end*/
+
 @media screen and (max-width:600px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .logo {
+        width: 53%;
+    }
+    .nav-bar ul {
+        width: 60%;
+    }
     .banner-titel {
         font-size: 22px;
         padding-top: 32px;
@@ -169,7 +349,7 @@ hr {
         width: 80%;
         padding: 20px 0 20px 0;}
     .banner-input button {
-            width: 90%;
+            width: 95%;
         }
     .popular-tour {
         flex-direction: column;
@@ -183,6 +363,35 @@ hr {
     .tour-img {
         margin: 0 auto;
     }
+    .choose-us {
+        margin-bottom: 30px;
+    }
+    .choose-pera {
+        width: 90%;
+    }
+    .card-row {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .guarantee {
+        width: 77%;
+    }
+    .news-letter {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .news-letter-text {
+        width: 78%;
+        margin: 0 auto;
+    }
+    .news-letter-img {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .discount {
+        right: -270px;
+    }
     .footer-part {
         padding: 30px 0;
     }
@@ -193,7 +402,7 @@ hr {
     .social-icon {
         padding: 10px 0;
     }
-    hr {
+    .footer-hr {
         width: 90%;
     }
     .copy-right {
