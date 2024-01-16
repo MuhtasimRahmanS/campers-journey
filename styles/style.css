@@ -7,7 +7,7 @@ main, header{
     margin: 0 auto;
 }
 /*heaser css start*/
-
+/*
 .logo {
     display: flex;
     align-items: center;
@@ -37,6 +37,7 @@ nav {
     color: #FF5400;
     font-weight: 700;
 }
+*/
 /*header css end*/
 /*banner css start*/
 .banner {
@@ -126,7 +127,117 @@ nav {
     background-color: #FF5400;
     border-radius: 8px;
 }
+.tour-img img{
+    width: 100%;
+}
 /*popular tour end*/
+/*destination start*/
+ .destination {
+    text-align: center;
+    margin-bottom: 70px;
+ }
+ .destination-titel {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+ }
+ .destination-pera {
+    color: rgba(19, 19, 24, 0.70);
+    line-height: 26px;
+    width: 60%;
+    margin: 16px auto;
+ }
+ .box1{
+    width: 100%;
+    height: 300px;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../styles/Images/Rectangle\ 5.png), lightgray 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+ .box2 {
+    width: 100%;
+    height: 300px;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../styles/Images/Rectangle\ 8.png), lightgray -101px -108.075px / 135.253% 172.05%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+ .box3 {
+    width: 100%;
+    height: 270px;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../styles/Images/Rectangle\ 6.png), lightgray 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+ .box4 {
+    width: 100%;
+    height: 270px;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../styles/Images/Rectangle\ 7.png), lightgray 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+ .box5 {
+    width: 100%;
+    height: 270px;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../styles/Images/Rectangle\ 9.png), lightgray 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+ .box6 {
+    width: 100%;
+    height: 300px;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../styles/Images/Rectangle\ 11.png), lightgray 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+ .box7 {
+    width: 100%;
+    height: 300px;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../styles/Images/Rectangle\ 10.png), lightgray 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+.box-text h2 {
+    position: relative;
+    top: calc(50% - 28px);
+    text-align: center;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+}
+ .first-row {
+    display: grid;
+    grid-template-columns: 1.925fr 1.925fr;
+    gap: 24px;
+    margin-top: 24px;
+ }
+ .secound-row {
+    display: grid;
+    grid-template-columns: 1.27fr 1.6fr .9fr;
+    gap: 24px;
+    margin-top: 24px;
+ }
+ .third-row {
+    display: grid;
+    grid-template-columns: 1.55fr 2.2fr;
+    gap: 24px;
+    margin-top: 24px;
+ }
+/*destination  end*/
+
 /*choose us start*/
 .choose-us {
     text-align: center;
@@ -363,6 +474,27 @@ nav {
     .tour-img {
         margin: 0 auto;
     }
+    .destination {
+        margin-bottom: 30px;
+     }
+     .destination-pera {
+        width: 90%;
+     }
+    .first-row {
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 0 auto;
+     }
+    .secound-row {
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 0 auto;
+     }
+    .third-row {
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 0 auto;
+     }
     .choose-us {
         margin-bottom: 30px;
     }
