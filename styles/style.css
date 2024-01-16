@@ -7,37 +7,38 @@ main, header{
     margin: 0 auto;
 }
 /*heaser css start*/
-/*
 .logo {
     display: flex;
     align-items: center;
-    width: 40%;
+}
+.logo-text {
+
 }
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 0;
+    margin: 30px auto;
 }
-.nav-bar {
+nav > ul {
     display: flex;
-    width: 55%;
 }
-.manu-bar li {
+nav li {
     list-style: none;
-    margin-left: 25px;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
 }
-.nav-bar a {
+nav li a {
     text-decoration: none;
     color: var(--Dark-02, #424247);
     font-size: 18px;
     transition: .5s;
 }
-.nav-bar a:hover {
+nav li a:hover {
     color: #FF5400;
     font-weight: 700;
 }
-*/
 /*header css end*/
 /*banner css start*/
 .banner {
@@ -489,17 +490,11 @@ nav {
 /*footer css end*/
 
 @media screen and (max-width:600px) {
-    nav {
+    nav
+     {
         flex-direction: column;
-        gap: 20px;
     }
     
-    .logo {
-        width: 53%;
-    }
-    .nav-bar ul {
-        width: 60%;
-    }
     .banner-titel {
         font-size: 22px;
         padding-top: 32px;
@@ -626,4 +621,9 @@ nav {
     .copy-right {
         font-size: 14px;
         margin-top: 20px;
+}
+@media screen and (max-width:560px) {
+    .discount {
+        right: -120px;
+    }
 }
